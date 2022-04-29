@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "DAY-39 배열,객체"
+title:  "DAY-41 배열,객체"
 categories: JAVASCRIPT
 tag: [JAVASCRIPT, 자바스크립트, 배열,객체]
 toc: true
@@ -11,7 +11,7 @@ sidebar:
 
 ## 🚀 Event 이용
 
-# 2022-04-26
+# 2022-04-28
 
 <!--Quote-->
 > ❗ 수업을 듣고, 개인이 공부한 내용을 적은 것 이기에 오류가 많을 수도 있음
