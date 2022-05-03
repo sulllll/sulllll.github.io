@@ -7,6 +7,7 @@ toc: true
 author_profile: false
 sidebar:
   nav: "docs"
+
 ---
 
 ## 🚀 정규표현식 활용
@@ -148,3 +149,8 @@ regex = /-/g;
 rs = phone.replace(regex, "");
 console.log(rs); // 01012341234
 ```
+
+
+### 정규표현식 정보
+1. [블로그](https://chrisjune-13837.medium.com/%EC%A0%95%EA%B7%9C%EC%8B%9D-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC-%EC%98%88%EC%A0%9C%EB%A5%BC-%ED%86%B5%ED%95%9C-cheatsheet-%EB%B2%88%EC%97%AD-61c3099cdca8)
+2. [공식사이트](https://ko.javascript.info/regexp-introduction)
