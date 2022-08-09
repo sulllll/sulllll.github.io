@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "컬렉션 프레임워크(Collection Framework) 2편"
-categories: JAVA 
+categories: JAVA
 tag: [JAVA, 컬렉션프레임워크, HashSet, TreeSet, 자바의 정석, 이진트리, HashMap]
 toc: true
 toc_sticky: true
@@ -15,10 +15,10 @@ sidebar:
 ## 컬렉션 프레임웍(Collections framework) 2편
 
 <!--Quote-->
-> *본 내용은 자바의 정석을 바탕으로 작성*  
+> *본 내용은 자바의 정석을 바탕으로 작성*
 
 > ❗ 개인이 공부한 내용을 적은 것 이기에 오류가 많을 수도 있음
- 
+
 # 2022-02-04
 
 ## HashSet
@@ -35,19 +35,7 @@ sidebar:
 - 이진 탐색 트리(binary search tree)로 구현, 범위 탐색과 정렬에 유리
 - 이진 트리는 모든 노드가 최대 2개의 하위노드를 갖음  ( 각 요소 (node)가 나무(tree) 형태로 연결(LinkedList의 변형)
 
-```java
-LinkedList
-class Node{
-		Node next; // 다음 요소의 주소를 저장
-		Object obj; // 데이터를 저장
-}
-
-TreeSet
-class TreeNode {
-		TreeNode left; // 왼쪽 자식노드 
-		Object element; // 저장할 객체 
-		TreeNode right;  // 오른쪽 자식 노드 
-```
+<script src="https://gist.github.com/kimyeong96/85aefa89c06fda8911fa1b6196a5f218.js"></script>
 
 ![이진트리.png](/assets/images/posts/2022-02-04/1.png)
 
@@ -66,15 +54,9 @@ class TreeNode {
 - Hashmap에서 순서를 유지하려면 LinkedHashMap을 이용
 - Map인터페이스를 구현. 데이터를 키와 값의 쌍으로 저장
 
-```java
-HashMap map = new HashMap();
-map.put("myId", "1234");
-map.put("asdf", "1111");
-map.put("asdf", "1234");
-// 키는 중복허용 x 값은 중복허용  o
-```
+<script src="https://gist.github.com/kimyeong96/e52bfac2255a5618d86ca870d8eb1fbe.js"></script>
 
-## 📑 출처 
+## 📑 출처
 
- - [자바의 정석 카페](https://cafe.naver.com/javachobostudy) 
+ - [자바의 정석 카페](https://cafe.naver.com/javachobostudy)
  - [자바의 정석 유튜브](https://www.youtube.com/user/MasterNKS)

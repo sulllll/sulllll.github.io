@@ -10,146 +10,53 @@ sidebar:
   nav: "docs"
 ---
 # 📌2022-03-02
- 
-## 자바 
+
+## 자바
 
 <!--Quote-->
 
-> ❗ 개인이 공부한 내용을 적은 것 이기에 오류가 많을 수도 있음 
+> ❗ 개인이 공부한 내용을 적은 것 이기에 오류가 많을 수도 있음
 
 
 ## **1️⃣ 반복문**
 
 ### 1. for
 
-```java
-for(초기식; 조건식; 증감식){
-		 		실행할 코드
-	 }
-
-// 초기값: 몇번부터 시작할건지
-// 조건식 : 언제까지 반복할건지 
-// 증감식 : for문 안쪽의 코드가 한번 반복될때마다 증가시킬 값
-```
+<script src="https://gist.github.com/kimyeong96/4a95cf8be3d55da56b53345bfd44413d.js"></script>
 
 
 💡 Exam - 01 : 1부터 사용자가 입력한 값까지 출력한 코드를 작성
 
-```java
-import java.util.Scanner;
-
-public class For {
-
-	public static void main(String[] args) {
-		// 언제까지 반복문을 돌려야할지 모르는 경우 
-		Scanner sc = new Scanner(System.in);
-		System.out.print("숫자를 입력하세요 ");
-		int input = Integer.parseInt(sc.nextLine());
-		for(int i = 1; i <= input; i++) {
-			System.out.println(i);
-		}
-
-	}
-
-}
-```
+<script src="https://gist.github.com/kimyeong96/0ff7e045ae41794cfa3cb46c349f77e1.js"></script>
 
 💡 Exam - 02 :  1부터 사용자가 입력한 값까지 홀수만 출력
 
-```java
-import java.util.Scanner;
-
-public class For {
-
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.print("정수를 입력하세요 ");
-		int input = Integer.parseInt(sc.nextLine());
-		
-		// 방법 1. 출력문 안쪽에서 조건식을 통해 홀수만 걸려 출력 ->
-		for(int i = 1; i <= input; i++) {
-			if(!(i % 2 == 0)) {
-				System.out.println("방법1. 홀수 출력 : " + i);
-			}
-		}
-		
-		// 방법 2. 증감식 변경
-		for(int i = 1; i <= input; i+=2) {
-			System.out.println("방법2. 홀수 출력 : " + i);
-		}
-	}
-
-}
-```
+<script src="https://gist.github.com/kimyeong96/66584771b7f81dd24a2cd172f43cbea4.js"></script>
 
 - 방법2는 생각하지 못함
 
-💡 Exam - 03 : Continue 이용 
+💡 Exam - 03 : Continue 이용
 
-```java
-import java.util.Scanner;
-
-public class For {
-
-	public static void main(String[] args) {
-		// 1~5 까지 숫자를 차례대로 출력하는데, 3만 빼고 출력 
-		for(int i = 1; i <= 5; i++) {
-			if(i == 3) {
-				continue; // 3을 만나면 건너뛰고 4부터 출력 
-				// 만약 break라면 3을 만나는 순간 반복문 종료 1, 2출력 
-			}System.out.println(i);
-		}
-		
-	}
-
-}
-```
+<script src="https://gist.github.com/kimyeong96/d6d3483f410d59ca0d0c525a52a2045c.js"></script>
 
 - continue → 현재 진행되고 있는 반복 흐름이 종료
 
-💡 Exam - 04 : 1부터 입력값까지의 전체 합을 출력 
+💡 Exam - 04 : 1부터 입력값까지의 전체 합을 출력
 
-```java
-import java.util.Scanner;
+<script src="https://gist.github.com/kimyeong96/5975368447e59e2fd23613bb99fbb98a.js"></script>
 
-public class Exam02_For {
 
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.print("정수를 입력하세요 ");
-		int input = Integer.parseInt(sc.nextLine());
-		int sum = 0 ;
-		for(int i = 1; i <= input; i++) {
-			//1. int sum = 0이 여기있다면(지역변수 이기에)
-			sum += i;
-		}System.out.println(sum); // 2. 이곳에서 sum이 컴파일 에러가 난다
-		
-	}
-
-}
-```
 - 지역변수 sum 확인
 <details>
 <summary>👈지역변수 </summary>
-<div markdown="1">       
+<div markdown="1">
 반복문 / 조건문 혹은 메서드(기능)의 {} 안 범위에서만 사용할 수 있는 변수
 </div>
-</details> 
+</details>
 
 ### 2. while
 
-```java
-while(조건식) {
-	 		실행할 코드 
-	  }
-
-ex) 
-int i = 0;
-while (i < 4) {
-			실행할 코드 
-			i++; 
-}
-```
+<script src="https://gist.github.com/kimyeong96/d3a2d3f2ec4584c67b6c78ef99e7b18b.js"></script>
 
 - for문과 같은 역할(반복) → 초기식 x ,
 - 무한루프가 반복되는 상황일 때 사용

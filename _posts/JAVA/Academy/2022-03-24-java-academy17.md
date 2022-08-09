@@ -12,11 +12,11 @@ sidebar:
 
 # 📌2022-03-24
 
-## 자바 
+## 자바
 
 <!--Quote-->
 
-> ❗ 개인이 공부한 내용을 적은 것 이기에 오류가 많을 수도 있음 
+> ❗ 개인이 공부한 내용을 적은 것 이기에 오류가 많을 수도 있음
 
 
 ## **1️⃣ 네트워크 용어 정리**
@@ -43,85 +43,10 @@ sidebar:
 
 ### 1) Server
 
-```java
-package com.network.message;
-
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.net.ServerSocket;
-import java.net.Socket;
-
-public class Server {
-
-	public static void main(String[] args) {
-					
-		try {
-			// 서버에서 보내면 Write하면 클라이언트에서는 Read 해야한다 
-			// 클라이언트에서 Write하면 서버에서는 Read 해야한다 
-			// 서버가동 -> 클라이언트 접속 -> 서버에서 클라이언트에게 "접속 ~ "전송
-					
-			ServerSocket server = new ServerSocket(8000); //포트 8000번 서버 생성 
-			Socket sock = server.accept(); // 서버가 허용 되면 소켓 생성 ->클라이언트가 접속하면 소캣 생성 
-					
-			// 클라이언트한테 데이터 보내기 
-			// 소켓에서 데이터를 보내기 위한 객체 생성 (스트림 생성)
-			DataOutputStream dos = new DataOutputStream(sock.getOutputStream()); 
-			String msg = "★★★★ 접속하신걸 환영합니다 ★★★★";
-			dos.writeUTF(msg); // msg 데이터를 보낸다 
-			dos.flush(); // 한번에 보낸다 
-					
-				while(true) {
-					// 클라이언트한테 데이터 받아오기
-					DataInputStream dis = new DataInputStream(sock.getInputStream());
-					String message = dis.readUTF();
-					System.out.println(sock.getLocalAddress() + " : " + message);
-				}
-					
-		}catch(Exception e) {
-			e.printStackTrace();
-		}
-	}
-}
-```
+<script src="https://gist.github.com/kimyeong96/d57fa8446767a88326b4ca54dfb9c82e.js"></script>
 
 ### 2) Client
-
-```java
-package com.network.message;
-
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.net.Socket;
-import java.util.Scanner;
-
-public class Client {
-
-	public static void main(String[] args) {
-			
-		Scanner sc = new Scanner(System.in);
-		
-		try{
-			Socket client = new Socket("192.168.0.4",8000); // 소캣 객체 만들기// 포트번호와 ipv4 번호 
-	
-			// 메세지를 서버에서 받기 
-			DataInputStream dis = new DataInputStream(client.getInputStream()); // 데이터를 받을 객체 만들기 
-			String msg = dis.readUTF(); // 데이터를 받아온걸 msg에 저장 
-			System.out.println("msg : " + msg); // msg 출력
-			
-				while(true) {
-					// 메세지를 서버에게 보내기 
-					System.out.print("메세지를 입력하세요 >> "); String message = sc.nextLine();
-					DataOutputStream dos = new DataOutputStream(client.getOutputStream());
-					dos.writeUTF(message);
-					dos.flush();
-				}
-				
-		}catch(Exception e) {
-			e.printStackTrace();
-		}
-	}
-}
-```
+<script src="https://gist.github.com/kimyeong96/7124f4f16a143ce01f5fb1c2b5ea9146.js"></script>
 
 ### 순서도
 
@@ -142,31 +67,10 @@ public class Client {
 
 ### 1) 배열 이용
 
-```java
-	Random random = new Random();
-	int[] numArray = new int[6];
-	for(int i = 0; i < numArray.length; i++) {
-		numArray[i] = random.nextInt(45) + 1;
-			
-		for(int j = 0; j < i; j++) {
-			if(numArray[i] == numArray[j]) {
-				i--; // 값은 값이면 i를 하나빼서 다시 반복문 돌게
-				break;
-			}
-		}
-```
+<script src="https://gist.github.com/kimyeong96/7a06c37daab4c2cacce90187434b36b8.js"></script>
 
 ### 2) 컬렉션 이용 HashSet이용
 
-```java
-
-	Random rand = new Random();
-	HashSet<Integer> lotto = new HashSet<>();
-	while(lotto.size() < 6) {
-		lotto.add(rand.nextInt(45)+1);
-	}
-	
-	
-```
+<script src="https://gist.github.com/kimyeong96/2b51fa6043c8b211e9ac1d3946abf272.js"></script>
 
 - HashSet -> 중복되지 않는 값만 저장

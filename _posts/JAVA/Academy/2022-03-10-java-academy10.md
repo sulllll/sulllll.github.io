@@ -12,10 +12,10 @@ sidebar:
 
 # 📌2022-03-10
 
-## 자바 
+## 자바
 <!--Quote-->
 
-> ❗ 개인이 공부한 내용을 적은 것 이기에 오류가 많을 수도 있음 
+> ❗ 개인이 공부한 내용을 적은 것 이기에 오류가 많을 수도 있음
 
 
 ## **1️⃣ 과제 코드 리뷰**
@@ -24,36 +24,7 @@ sidebar:
 
 ## **2️⃣ 클래스와 객체**
 
-```java
-package com.oop.cls;
-
-public class Laptop {
-	/*
-	 * 추상화 : 노트북이 가지고 있는 특성, 기능을 추려내는 작업 
-	 * 
-	 * 특성 : 브랜드, 색상, 가격, 사이즈
-	 * 기능 : 전원 on/off
-	 * 
-	 * 
-	 * */
-	
-	// 맴버변수(맴버필드)를 특성을 기준으로 해서 작성
-	String brand;
-	String color; 
-	int price;
-	double size;
-	
-	// 기능 -> 메서드(맴버 메서드)
-	public void powerOn() {
-		System.out.println("전원이 켜졌습니다");
-	}
-	
-	public void powerOff() {	
-		System.out.println("전원을 종료합니다");
-	}
-	
-}
-```
+<script src="https://gist.github.com/kimyeong96/72787bb62c19c7c619c301313dd1c9bb.js"></script>
 
 - 패키지명은 소문자로 작성
 - Laptop을 특성과 기능으로 나뉘어서 생각 → 특성은 맴버 변수 , 기능은 맴버 메서드
@@ -62,36 +33,9 @@ public class Laptop {
 
 Laptop 클래스를 실행하는 파일
 
-```java
-package com.oop.cls;
+<script src="https://gist.github.com/kimyeong96/764d8e7158c80236c2096639ab76fa6a.js"></script>
 
-public class Run {
-
-	public static void main(String[] args) {
-		// 사용자가 정의해 만들어진 클래스는 참조자료형
-		Laptop laptop = new Laptop();
-		System.out.println(laptop); // com.oop.cls.Laptop@4aa8f0b4 주소값이 나옴
-	}
-
-}
-```
-
-```java
-package com.oop.cls;
-
-public class Run {
-
-	public static void main(String[] args) {
-		// 사용자가 정의해 만들어진 클래스는 참조자료형
-		Laptop laptop = new Laptop();
-		laptop.brand = "L"; // 기존의 디폴트 값인 null 값에서 LG로 바뀜
-		laptop.color = "white"; // 기존의 디폴트 값인 null 값에서 white로 바뀜
-		laptop.price = 500000;  // 기존의 디폴트 값인 0에서 500000로 바뀜 
-		laptop.size = 16.5; // 기존의 디폴트 값인 0.0d에서 16.5로 바뀜
-	}
-
-}
-```
+<script src="https://gist.github.com/kimyeong96/005fa1cf1f377bf6d69163f1af32b635.js"></script>
 
 ![1.jpg](/assets/images/posts/2022-03-10/1.jpg)
 
@@ -107,44 +51,12 @@ public class Run {
 ### 접근 제한자
 
 1. public : 외부, 모든 곳에서 접근이 가능
-2. private : 반드시 해당 클래스 내부에서만 접근 가능 
+2. private : 반드시 해당 클래스 내부에서만 접근 가능
 3. protected : 같은 패키지 혹은 상속
 4. default : 같은 패키지 안에서는 모두 접근이 가능
 
 ## 3️⃣ getter / setter - 정보은닉
-
-```java
-package com.oop.cls;
-
-public class Car {
-	private String brand; 
-	private int speed;
-	private int oil;
-	
-	public String getBrand() {
-		return this.brand;
-	}
-	
-	public void setBrand(String brand) {
-		if(brand.equals("BMW")) { // BMW입력을 받으면 Hyundai로 전달 
-			this.brand = "Hyundai";
-		}
-		else this.brand = brand;
-	}
-}
-
-package com.oop.cls;
-
-public class Run02 {
-
-	public static void main(String[] args) {
-		Car avante = new Car();
-		avante.setBrand("BMW");
-		System.out.println(avante.getBrand()); // Hyundai 출력
-		
-	}
-}
-```
+<script src="https://gist.github.com/kimyeong96/acdbe7a425aba7536fc251e35a29208a.js"></script>
 
 - private으로 맴버변수를 설정하면 getter / setter 필수
 - getter와 setter의 이름설정은 get + 맴버변수 이름 / set + 맴버변수 이름
@@ -166,10 +78,7 @@ public class Run02 {
 
 ### 1) showInputDialog
 
-```java
-String name = JOptionPane.showInputDialog("1. 이름을 입력하세요."); //String으로 반환된다.
-System.out.println(name);
-```
+<script src="https://gist.github.com/kimyeong96/13a8238071be10b802d63effe3641a73.js"></script>
 
 ![3.png](/assets/images/posts/2022-03-10/3.png)
 
@@ -189,26 +98,7 @@ JOptionPane.showMessageDialog(null, name); // 첫번째는 null 값
 
 ### 3) 예제 코드
 
- 
-
-```java
-		String name = JOptionPane.showInputDialog("1. 이름을 입력하세요."); //String으로 반환된다.
-		JOptionPane.showMessageDialog(null, name+"님 어서오세요"); // 첫번째는 null 값
-		
-		int count = Integer.parseInt(JOptionPane.showInputDialog("2. 인원수를 입력해 주세요"));
-		if(count == 1) JOptionPane.showMessageDialog(null, "혼밥 손님입니다");
-		else JOptionPane.showMessageDialog(null, "손님 " + count + "명 입장하였습니다.\n");
-		
-		
-		double temp = Double.parseDouble(JOptionPane.showInputDialog("3. 현재 체온을 입력해 주세요."));
-		if(temp >= 36.5 && temp <= 37) JOptionPane.showMessageDialog(null, "정상 체온입니다.");
-			else if(temp > 37) JOptionPane.showMessageDialog(null, "체온이 너무 높습니다.");
-				else JOptionPane.showMessageDialog(null, "체온이 너무 낮습니다.");
-		
-		boolean tf = Boolean.parseBoolean(JOptionPane.showInputDialog("4. 매장 식사 여부를 입력해 주세요."));
-		if(tf) JOptionPane.showMessageDialog(null, "매장 손님입니다");
-		else JOptionPane.showMessageDialog(null, "포장 손님입니다");
-```
+<script src="https://gist.github.com/kimyeong96/67053f05374e2fb1aca005217e88bd5e.js"></script>
 
 ## 6️⃣ 라이브러리 사용
 

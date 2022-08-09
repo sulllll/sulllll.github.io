@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "컬렉션 프레임워크(Collection Framework) 1편"
-categories: JAVA 
+categories: JAVA
 tag: [JAVA, 컬렉션프레임워크, ArrayList, LinkedList, 자바의 정석]
 toc: true
 toc_sticky: true
@@ -15,44 +15,26 @@ sidebar:
 ## 컬렉션 프레임웍(Collections framework) 1편
 
 <!--Quote-->
-> *본 내용은 자바의 정석을 바탕으로 작성*  
+> *본 내용은 자바의 정석을 바탕으로 작성*
 
-> ❗ 개인이 공부한 내용을 적은 것 이기에 오류가 많을 수도 있음 
+> ❗ 개인이 공부한 내용을 적은 것 이기에 오류가 많을 수도 있음
 
 
 ### 컬렉션 프레임웍의 핵심 인터페이스
 
-1. List : 순서가 있는 데이터 집합, 데이터의 중복 허용 
+1. List : 순서가 있는 데이터 집합, 데이터의 중복 허용
    ex) 대기자 명단, 보통 ArrayList와 LinkedList를 사용
-2. Set : 순서가 없는 데이터 집합, 데이터의 중복 허용 금지 
+2. Set : 순서가 없는 데이터 집합, 데이터의 중복 허용 금지
    ex) 양의 정수집합
-3. Map : 키와 값의 쌍으로 이루어진 데이터의 집합, 순서 유지(X), 키 → 중복 허용 금지, 값 → 중복 허용  
-   ex) 우편번호, 지역번호 , 키 → ID , 값 → 비밀번호라 생각 
+3. Map : 키와 값의 쌍으로 이루어진 데이터의 집합, 순서 유지(X), 키 → 중복 허용 금지, 값 → 중복 허용
+   ex) 우편번호, 지역번호 , 키 → ID , 값 → 비밀번호라 생각
 
 ## ArrayList
 
 - 데이터의 저장공간으로 배열을 사용
-    
-    ```java
-    class Example {
-    	public static void main(String[] args) {
-    		ArrayList list1 = new ArrayList(10);
-    		list1.add(new Integer(5)); // lis1.add(5) 랑 같다 // autoboxing에 의해 기본형이 참조형으로 자동 변환
-    		list1.add(new Integer(2));
-    		list1.add(new Integer(4));
-    		list1.add(new Integer(0));
-    		Collections.sort(list1);   // list1을 정렬한다. 기본은 오름차순으로 [0,2,4,5]출력
-    
-    		ArrayList list2 = new ArrayList(list1.subList(1,3)); //  [2,4]출력 
-    		list1.containsAll(list2) // list1안에 list2를 포함하고있냐? boolean 값으로 나옴
-    		list2.add("b")  // [2,4,b] 출력
-    		list2.add(1,"A") // 1번 인덱스에 A삽입 // [2,A,4,b] 출력 
-    		list2.remove(2) // 2번 인덱스를 삭제해라 
-    		list2.remove(new Integer(2)) // 정수 2를 삭제해라 
-    	}
-    }
-    ```
-    
+
+<script src="https://gist.github.com/kimyeong96/847b5d6b2e8afa6baa69a3179ab6c2c6.js"></script>
+
 
 ![arrayList.png](/assets/images/posts/2022-02-02/arrayList.png)
 
@@ -66,7 +48,7 @@ sidebar:
 
 ## LinkedList
 
-1)장점 
+1)장점
 
 - 배열의 단점을 보완 → 배열과 달리 불연속적으로 데이터를 연결
 - 데이터의 삭제 : 단 한 번의 참조변경만으로 가능
@@ -75,11 +57,11 @@ sidebar:
 2)단점
 
 - 데이터 접근성이 나쁨 →  0x200 에서 0x400으로 한번에 못가고 한칸씩 옮겨서 가야한다
-    
-    ![linkedlist.png](/assets/images/posts/2022-02-02/linkedlist.png)
-    
 
- 
+![linkedlist.png](/assets/images/posts/2022-02-02/linkedlist.png)
+
+
+
 
 ### 더블링크드리스트 (Doubly LinkedList)
 
@@ -88,7 +70,7 @@ sidebar:
 
 ![double.png](/assets/images/posts/2022-02-02/double.png)
 
-   
+
 
 ### 더블써큘려링크드리스트
 
@@ -100,51 +82,22 @@ sidebar:
 ## ArrayList vs LinkedList
 
 1. 순차적으로 데이터를 추가/삭제  ArrayList가 더 빠름
-2. 비순차적으로 데이터를 추가/삭제 LinkedList가 더 빠름 
-3. 접근시간(access time)은 ArrayList가 더 빠름 
+2. 비순차적으로 데이터를 추가/삭제 LinkedList가 더 빠름
+3. 접근시간(access time)은 ArrayList가 더 빠름
 
 ## Iterator
 
-```java
-import java.util.*;
-
-class Example {
-	public static void main(String[] args) {
-		Collection c = new TreeSet();  // set과 list는 Collection의 자손 
-		Collection c2 = new ArrayList();  //
-
-		ArrayList list = new ArrayList();
-		list.add("1");
-		list.add("2");
-		list.add("3");
-		list.add("4");
-		list.add("5");
-
-		// 만약 위의 ArrayList가 아닌 HashSet이 이여도 오류가 안난다 
-		Iterator it = list.iterator();
-
-		while(it.hasNext()) { //hasNext() 읽어올 요소가 있는지 확인
-			Object obj = it.next();  // next() 요소를 읽어오기 
-			System.out.println(obj); 
-		}
-		// 위와 같은 표현 // 만약 위의 ArrayList가 아닌 HashSet이면 오류가 난다 
-		for(int i=0; i<list.size(); i++) {
-			Object obj = list.get(i);
-			System.out.println(obj);
-		}
-	} // main
-}
-```
+<script src="https://gist.github.com/kimyeong96/abab1554b15ec24db7d591a0a2a10519.js"></script>
 
 <details>
 <summary>👈Tip</summary>
-<div markdown="1">       
+<div markdown="1">
 list와 set은 collection이 자손이다 → 다형성 활용 가능
 </div>
-</details> 
+</details>
 
 
-## 📑 출처 
+## 📑 출처
 
- - [자바의 정석 카페](https://cafe.naver.com/javachobostudy) 
+ - [자바의 정석 카페](https://cafe.naver.com/javachobostudy)
  - [자바의 정석 유튜브](https://www.youtube.com/user/MasterNKS)

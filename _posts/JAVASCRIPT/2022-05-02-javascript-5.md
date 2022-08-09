@@ -26,13 +26,7 @@ sidebar:
 Example)
 
 
-```javascript
-let sample = "sky snew snow snows smile snowman snooze snows snuws snowly";
-
-// snows의 문자패턴을 찾고 싶음
-let regex1 = /snows/g;
-let regex2 = new RegExp(/snows/g);
-```
+<script src="https://gist.github.com/kimyeong96/8e9fbbf250469d56493268eb7f5edcb6.js"></script>
 
 
 ### 💡RegExp 함수
@@ -41,20 +35,7 @@ let regex2 = new RegExp(/snows/g);
 
 대상 문자열을 기준으로 패턴식에 일치하는 문자열이 있으면 true 없으면 false 반환, 포인터 개념(O)
 
-```javascript
-let sample = "sky snew snow snows smile snowman snooze snows snuws snowly";
-
-let regex1 = /snows/g;
-let regex2 = new RegExp(/snows/g);
-
-// test를 사용하기 위해선 global 플래그를 붙여야한다
-rs = regex1.test(sample);
-console.log(rs); // true 첫번째 snows
-rs = regex1.test(sample);
-console.log(rs); // true 두번째 snows
-rs = regex1.test(sample);
-console.log(rs); // false 세번째 snows는 없기 때문에
-```
+<script src="https://gist.github.com/kimyeong96/47df3d833cff6c3d90f5ca02f4a32325.js"></script>
 
 
 
@@ -62,40 +43,7 @@ console.log(rs); // false 세번째 snows는 없기 때문에
 
 대상 문자열을 기준으로 패턴식에 일치하는 문자열을 찾아 배열로 반환, 몾찾으면 null 반환, 포인터 개념(O)
 
-```javascript
-
-sample = "심상 달구지 겨울 도롱뇽 가을 여름 막내 사과 파랑 심수봉 달무리";
-
-let regex = /심상/g;
-
- // exec 역시 포인터의 개념이 있어 현재 가리키고 있는 값을 기억함
-
- rs = regex.exec(sample);
- console.log(rs); // index 25
-
- rs = regex.exec(sample);
- console.log(rs); // null
-
-regex = /(심.+?)(달.{2})/g;
-rs = regex.exec(sample);
-console.log(rs); // 심상 달구지
-// 0번 인덱스($&) 1번 인덱스($1) 2번 인덱스($2)
-console.log(rs[0]); // &
-console.log(rs[1]); // $1
-console.log(RegExp.$1);
-console.log(rs[2]); // $2
-console.log(RegExp.$2);
-
-console.log(rs[3]) //null
-
-rs = regex.exec(sample);
-console.log(rs) // 심수봉 달무리
-
-일치하는 값 한번에 뽑기
-while((rs = regex.exec(sample)) != null) {
-console.log(RegExp.$1 +" : "+ RegExp.$2);
-    // }
-```
+<script src="https://gist.github.com/kimyeong96/ada15aea12568395bc3d74ef5bd99593.js"></script>
 
 
 ### 💡String 함수
@@ -104,32 +52,14 @@ console.log(RegExp.$1 +" : "+ RegExp.$2);
 일치하는 문자열의 배열을 반환해주는 함수 -> 일치하는 값이 없으면 null
 
 
-
-
-``` javascript
-sample = "심상 달구지 겨울 도롱뇽 가을 여름 막내 사과 파랑 심수봉 달무리";
-regex = /(심.+?)(달.{2})/g;
-rs = sample.match(regex);
-console.log(rs); // ['심상 달구지', '심수봉 달무리']
-```
+<script src="https://gist.github.com/kimyeong96/a985a1eab5e286794866c957d6b22b52.js"></script>
 
 2️⃣ 대상문자열.search(패턴식)
 
 대상 문자열을 기준으로 패턴식에 일치하는 문자열의 인덱스를 반환, 못찾으면 -1 반환
 
 
-
-```javascript
-sample = "심상 달구지 겨울 도롱뇽 가을 여름 막내 사과 파랑 심수봉 달무리";
-regex = /(심.+?)(달.{2})/g;
-
-let rs = sample.search(regex);
-console.log(rs); // 0 (일치하면 인덱스 값 반환)
-
-rs = sample.search(regex);
-console.log(rs); // 0 (일치하면 인덱스 값 반환)
-
-```
+<script src="https://gist.github.com/kimyeong96/9137d463b75d1a6e47a19592427ec07e.js"></script>
 
 3️⃣ replace
 
@@ -137,18 +67,7 @@ console.log(rs); // 0 (일치하면 인덱스 값 반환)
 1) 문자열.replace(대상 값, 반환할 값) : 문자열에서 대상 값을 변환할 값으로 변환
 
 
-```javascript
-sample = "심상 달구지 겨울 도롱뇽 가을 여름 막내 사과 파랑 심수봉 달무리";
-regex = /(심.+?)(달.{2})/g;
-
-rs = sample.replace(regex, "none");
-console.log(rs); // none 겨울 도롱뇽 가을 여름 막내 사과 파랑 none
-
-let phone = '010-1234-1234';
-regex = /-/g;
-rs = phone.replace(regex, "");
-console.log(rs); // 01012341234
-```
+<script src="https://gist.github.com/kimyeong96/91540dc81bc4a868b36ca01e32f7f7f5.js"></script>
 
 
 ### 정규표현식 정보
