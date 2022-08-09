@@ -115,14 +115,8 @@ sidebar:
 1️⃣ 다음을 코드를 활용해 현재 마우스의 좌표를 얻어올 수 있다.
 
 
-```javascript
-window.addEventListener("mouseover",function(e) {
- console.log(e.pageX);
- console.log(e.pageY);
- console.log(e.clientX);
- console.log(e.clientY);
-})
-```
+<script src="https://gist.github.com/kimyeong96/1f8cc9759adb7424b1baba389391ce51.js"></script>
+
 <details>
 <summary>출처</summary>
 <div markdown="1">

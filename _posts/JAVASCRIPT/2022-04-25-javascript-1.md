@@ -26,62 +26,14 @@ let,const : block level scope
 
 
 
-```javascript
-// 에러 발생
-console.log(num1); // 실행
-console.log(num2); // 에러 발생
-console.log(num3); // 에러 발생
-
-var num1 = 1;
-let num2 = 2;
-const num3 = 3;
-
-
-// 에러 발생 x
-var num4 = 1;
-let num5 = 2;
-const num6 = 3;
-
-console.log(num4); // 실행
-console.log(num5); // 실행
-console.log(num6); // 실행
-
-// 변수에 값의 재할당
-num4 = "string1";
-num5 = "string1";
-
-console.log(num4);
-console.log(num5);
-
-// 중복된 변수명 사용
-var num1 = true;
-// let num2 = false; -> 에러 발생(위에서 num2를 let으로 이미 선언)
-```
+<script src="https://gist.github.com/kimyeong96/061927130fbc16194796d6f245d704f3.js"></script>
 
 ### scope
 
 - function level scope : 하나의 함수 내에서 선언한 변수는 해당 함수 내에서 공유되는 경우
 - block level scope : 하나의 블록 내에서 선언한 변수는 그 블록 내에서만 공유가 가능한 경우 (자바에서의 지역변수)
 
-```javascript
-// var를 이용하면 지역변수여도 사용 가능하다
-function test1() {
-  if(true) {
-    var test = 'TEST_VAR';  //
-  }
-
-  console.log(test);
-}
-
-// let은 오류가 발생한다
-function test2() {
-  if(true) {
-    let test = 'test_var';
-  }
-
-  console.log(test);
-}
-```
+<script src="https://gist.github.com/kimyeong96/110315f22ceafebedd8fc265dd116eda.js"></script>
 
 ## 🔔type
 자바스크립트에서의 자료형
@@ -89,38 +41,7 @@ function test2() {
   - undefined : 변수를 선언하고 그 변수에 값이 대입되지 않았을 경우
   - null : 값 자체가 없는 경우
 
-```javascript
-let a;
-console.log(a); // undefined
-console.log(typeof a); // undefined
-
-let b = null;
-console.log(b); // null
-console.log(typeof b); // object
-
-let c = "c";
-console.log(c); // c
-console.log(typeof c); // string
-
-let d = 0;
-console.log(d); // 0
-console.log(typeof d); // number
-
-let sym1 = Symbol("abc");
-let sym2 = Symbol("abc");
-console.log(sym1); // Symbol(abc)
-console.log(sym2); // Symbol(abc)
-console.log(sym1 == sym2); // false
-
-//BigInt 형으로 값을 넣어주고 싶으면 숫자 뒤에 n을 붙여준다
-let num = 10n;
-console.log(typeof num); //bigint
-
-console.log(1/0); // Infinity
-
-console.log("문자"/1);// NaN = Not a Number
-
-```
+<script src="https://gist.github.com/kimyeong96/3e3887274196847e918de5dff7e487bb.js"></script>
 
 
 ## 🔔basicFunction
@@ -131,9 +52,7 @@ console.log("문자"/1);// NaN = Not a Number
 - 기본적인 알림창(확인 버튼 하나가 뜬다)
 
 
-```javascript
-alert('hello');
-```
+<script src="https://gist.github.com/kimyeong96/3d4eeba07a76e8b627d98498ce7e0c17.js"></script>
 
 
 1) confirm
@@ -141,14 +60,7 @@ alert('hello');
 - 알림창(확인 버튼과 취소 버튼이 나옴)
 
 
-```javascript
-confirm('hello2');
-
-let check = confirm("정말 삭제하시겠습니까?");
-console.log(check);
-// 확인을 누르면 true
-// 취소를 누르면 false
-```
+<script src="https://gist.github.com/kimyeong96/48d2ff84d3fa9650385be5c3bfe78cd1.js"></script>
 
 
 3) prompt
@@ -156,13 +68,7 @@ console.log(check);
 - 알림창(확인과 취소, 입력창을 띄워준다)
 - 입력한 결과값을 return 해줌
 
-
-
-```javascript
-// 알림창(확인과 취소, 입력창을 띄워준다)
-  let input = prompt("hello");
-  console.log(input);
-```
+<script src="https://gist.github.com/kimyeong96/9cf05c7adab070cea43f18d6e81a9d19.js"></script>
 
 ## 🔔selector
 
@@ -191,52 +97,14 @@ console.log(check);
 
 - 자바스크립트에서 함수는 값처럼 사용가능
 
-```javascript
-function plus(num1, num2) {
-  return num1 + num2;
-}
-
-let result = plus(3,4);
-console.log(result);
-
-// 함수를 값처럼 사용한다
-let temp = plus; // plus라는 함수 자체가 temp에 들어간다
-console.log(temp); // ƒ plus(num1, num2) {return num1 + num2;} 출력 //
-console.log(temp(5,7)); // 12 출력
-
-```
+<script src="https://gist.github.com/kimyeong96/f509575425c90e26b286b1dea491f536.js"></script>
 
 ### 익명함수
 
 
 - 이름이 없는 함수
 
-```javascript
-let temp2 = function(a, b) {
-  return a + b;
-}
-
-console.log(temp2); // ƒ (a, b) {return a + b;} 출력
-console.log(temp2(5,10)); // 15 출력
-
-```
-### 매개변수로 함수를 넘기기
-
-```javascript
-// 매개변수로 함수를 넘기는 상황
-function func(f) {
-  return f(5,10);
-}
-
-function add(a, b) {
-  return a+b;
-}
-
-func(add);
-
-console.log(func(add)); // 15출력
-
-```
+<script src="https://gist.github.com/kimyeong96/66560a697509cfa436ec7e01cd133e40.js"></script>
 
 
 ## 이벤트
@@ -261,27 +129,4 @@ console.log(func(add)); // 15출력
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-
-
-```javascript
-
-<button type="button" id="btn">버튼</button>
-const btn = document.getElementById('btn');
-
-function printA() {
-  alert("A");
-}
-
-function printB() {
-  alert("B");
-}
-
-// 이벤트는 마지막에 셋팅된 함수만 호출된다
-btn.onclick = printA();
-btn.onclick = printB();
-
-// addEventListener를 사용시 여러개를 한번에 사용가능
-btn.addEventListener("click", printA);
-btn.addEventListener("click", printB);
-
-```
+<script src="https://gist.github.com/kimyeong96/548ca0d8884efaf9ed5396f55d075188.js"></script>

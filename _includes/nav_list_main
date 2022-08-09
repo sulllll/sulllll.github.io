@@ -15,14 +15,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "JAVA" %}
-                        <li><a href="/categories/JAVA" class="">JAVA 사전 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/JAVA" class="">JAVA 혼자 공부({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "JAVA-academy" %}
-                        <li><a href="/categories/JAVA-academy" class="">JAVA 정리 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/JAVA-academy" class="">JAVA 수업 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -30,14 +30,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "JAVASCRIPT" %}
-                        <li><a href="/categories/JAVASCRIPT" class="">JAVASCRIPT 기초 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/JAVASCRIPT" class="">JAVASCRIPT 수업 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "html1" %}
-                        <li><a href="/categories/html1" class=""> HTML&CSS기초 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/html1" class=""> HTML&CSS 수업 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -53,7 +53,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "JSP" %}
-                        <li><a href="/categories/JSP" class=""> JSP기초 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/JSP" class=""> JSP 수업 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -61,7 +61,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Servlet" %}
-                        <li><a href="/categories/Servlet" class=""> Servlet 기초 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/Servlet" class=""> Servlet 수업 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -69,7 +69,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Spring" %}
-                        <li><a href="/categories/Spring" class=""> Spring기초 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/Spring" class=""> Spring 수업 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -84,14 +84,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Database-academy" %}
-                        <li><a href="/categories/Database-academy" class=""> SQL 정리 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/Database-academy" class=""> SQL 수업 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Database-jdbc" %}
-                        <li><a href="/categories/Database-jdbc" class=""> JDBC ({{category[1].size}})</a></li>
+                        <li><a href="/categories/Database-jdbc" class=""> JDBC 수업 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
