@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  " DAY-12. 자바 상속"
-categories: JAVA-academy
+categories: Java
 tag: [JAVA, 상속, super]
 toc: true
 toc_sticky: true

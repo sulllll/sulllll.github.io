@@ -1,8 +1,8 @@
 ---
 layout: single
-title:  " DAY-27. DataBase DML,TCL,DCL,View,Sequence"
-categories: Database-academy
-tag: [Database,DML,TCL,DCL,View,Sequence]
+title:  " DAY-27. Oracle DML,TCL,DCL,View,Sequence"
+categories: Oracle
+tag: [Oracle,DML,TCL,DCL,View,Sequence]
 toc: true
 toc_sticky: true
 author_profile: false

@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  " DAY-09. 자바 메서드,오버로딩"
-categories: JAVA-academy
+categories: Java
 tag: [JAVA,  메서드, 오버로딩]
 toc: true
 toc_sticky: true

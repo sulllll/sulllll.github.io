@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  " DAY-15. 자바 제네릭,IO스트림"
-categories: JAVA-academy
+categories: Java
 tag: [JAVA, 제네릭, IO스트림]
 toc: true
 toc_sticky: true

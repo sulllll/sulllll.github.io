@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  " DAY-17. 자바 네트워크"
-categories: JAVA-academy
+categories: Java
 tag: [JAVA, 소켓, 네트워크]
 toc: true
 toc_sticky: true

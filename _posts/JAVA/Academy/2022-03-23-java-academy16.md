@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  " DAY-16. 자바 IO스트림 심화"
-categories: JAVA-academy
+categories: Java
 tag: [JAVA, IO스트림]
 toc: true
 toc_sticky: true

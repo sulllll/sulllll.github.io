@@ -1,10 +1,10 @@
 ---
 title: "Servlet/JSP"
 layout: archive
-permalink: categories/JSPALONE
+permalink: categories/Jsp
 author_profile: true
 sidebar_main: true
 ---
 
-{% assign posts = site.categories.JSPALONE %}
+{% assign posts = site.categories.Jsp %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
