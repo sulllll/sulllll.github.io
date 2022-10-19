@@ -6,8 +6,6 @@ main:
     url: /search/
   - title: "Github"
     url: https://github.com/kimyeong96
-  - title: "Github"
-    url: https://github.com/kimyeong96
 
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
