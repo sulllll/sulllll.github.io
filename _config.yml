@@ -12,13 +12,13 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "custom" # "air", "mint", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "custom" # "air", "mint", "aqua", "contrast", "dark", "dirt", "neon", "mint", , "sunrise"
 
 # Site Settings
 locale: "ko-KR"
-title: "Step by Step"
-title_separator: "|"
-subtitle: "EVERYDAY"
+title: "매일 매일 도전"
+title_separator: ""
+subtitle: ""
 name: "kimyeongwan"
 description: "기록으로 남기기"
 url: "https://kimyeong96.github.io" #http://localhost:4000
@@ -110,7 +110,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:marsincat1405@gmail.com"
+      url: "mailto:kimyeongwan0108@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/kimyeong96"
