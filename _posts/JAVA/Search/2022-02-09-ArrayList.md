@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "ArrayList 메서드"
-categories: JAVA
+categories: Java
 tag: [JAVA, ArrayList]
 toc: true
 toc_sticky: true

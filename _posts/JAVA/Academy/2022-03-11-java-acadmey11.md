@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  " DAY-11. 자바 객체 배열"
-categories: JAVA-academy
+categories: Java
 tag: [JAVA, 객체, 객체 배열, char]
 toc: true
 toc_sticky: true

@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "DAY-41 배열,객체"
-categories: JAVASCRIPT
+categories: Javascript
 tag: [JAVASCRIPT, 자바스크립트, 배열,객체]
 toc: true
 author_profile: false

@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  " DAY-14. 자바 ArrayList"
-categories: JAVA-academy
+categories: Java
 tag: [JAVA, ArrayList]
 toc: true
 toc_sticky: true

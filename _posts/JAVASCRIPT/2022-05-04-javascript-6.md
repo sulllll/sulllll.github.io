@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "DAY-45 jquery event 활용"
-categories: JAVASCRIPT
+categories: Javascript
 tag: [JAVASCRIPT, 자바스크립트, jquery event 활용]
 toc: true
 author_profile: false

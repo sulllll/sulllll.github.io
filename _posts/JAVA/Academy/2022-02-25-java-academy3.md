@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  " DAY-03. 자바 형변환,연산자,Scanner "
-categories: JAVA-academy
+categories: Java
 tag: [JAVA, String, 형변환, 연산자, Scanner]
 toc: true
 toc_sticky: true

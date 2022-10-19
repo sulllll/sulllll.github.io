@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  " DAY-07. 자바 시험"
-categories: JAVA-academy
+categories: Java
 tag: [JAVA]
 toc: true
 toc_sticky: true

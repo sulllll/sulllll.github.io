@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  " DAY-06. 자바 반복문,라벨링 "
-categories: JAVA-academy
+categories: Java
 tag: [JAVA, 반복문 탈출, labelling]
 toc: true
 toc_sticky: true

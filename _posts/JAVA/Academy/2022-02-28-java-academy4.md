@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  " DAY-04. 자바 조건문"
-categories: JAVA-academy
+categories: Java
 tag: [JAVA, 조건문]
 toc: true
 toc_sticky: true

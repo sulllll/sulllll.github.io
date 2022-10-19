@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  " DAY-10. 자바 객체"
-categories: JAVA-academy
+categories: Java
 tag: [JAVA, 객체, 라이브러리]
 toc: true
 toc_sticky: true

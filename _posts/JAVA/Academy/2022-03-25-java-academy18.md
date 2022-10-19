@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  " DAY-18. 자바 네트워크 심화"
-categories: JAVA-academy
+categories: Java
 tag: [JAVA, 네트워크 연습]
 toc: true
 toc_sticky: true
