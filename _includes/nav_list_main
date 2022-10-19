@@ -8,7 +8,7 @@
   <ul class="nav__items" id="category_tag_menu">
 
       <li>
-      <span style="font-size: 13px;">📂</span> &nbsp; <span style="font-family:'Cafe24Oneprettynight'; font-size: 14px;">전체 글 수</style> <span style="font-family:'Coming Soon'; font-size: 14px;">{{sum}}</style> <span style="font-family:'Cafe24Oneprettynight'; font-size: 14px;">개</style>
+        <span style="font-family:'Cafe24Oneprettynight'; font-size: 13px;"> 📂</span> &nbsp; <span style="font-family:'Cafe24Oneprettynight'; font-size: 14px;">전체 글 수</style> <span style="font-family:'Coming Soon'; font-size: 14px;">{{sum}}</style> <span style="font-family:'Cafe24Oneprettynight'; font-size: 14px;">개</style>
       </li>
       <li>
         <span class="nav__sub-title">Academy</span>
@@ -33,13 +33,13 @@
                 {% endif %}
             {% endfor %}
         </ul>
-        <ul>
+        <!-- <ul>
             {% for category in site.categories %}
                 {% if category[0] == "Servlet" %}
                     <li><a href="/categories/Servlet" class=""> Servlet 수업 ({{category[1].size}})</a></li>
                 {% endif %}
             {% endfor %}
-        </ul>
+        </ul> -->
         <ul>
             {% for category in site.categories %}
                 {% if category[0] == "JSP" %}
@@ -75,7 +75,7 @@
                 {% endif %}
             {% endfor %}
         </ul>
-        <span class="nav__sub-title">Java</span>
+        <span class="nav__sub-title">JAVA</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "JAVA" %}
@@ -92,7 +92,7 @@
                 {% endfor %}
             </ul>
 
-        <span class="nav__sub-title">Algorithm</span>
+        <span class="nav__sub-title">ALGORITHM</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Algorithm" %}
@@ -100,7 +100,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">Jsp</span>
+        <span class="nav__sub-title">JSP</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "JSPALONE" %}
@@ -124,7 +124,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">Github Blog</span>
+        <span class="nav__sub-title">BLOG</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "BLOG" %}

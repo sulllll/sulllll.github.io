@@ -15,3 +15,20 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+# categories:
+#   - title: "Academy"
+#     children:
+#       - title: "Java 수업"
+#         url: /categories/JAVA-academy/
+#       - title: "Categories2"
+#         url: /categories/html1/
+#       - title: "Categories3"
+#         url: /categories/JAVASCRIPT/
+#       - title: "Categories4"
+#         url: /categories/Servlet/
+#       - title: "Categories4"
+#         url: /categories/JSP/
+#       - title: "Categories4"
+#         url: /categories/Spring/
+#       - title: "Categories4"
+#         url: /categories/Database-academy/
