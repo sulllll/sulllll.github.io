@@ -12,14 +12,14 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "custom" # "air", "mint", "aqua", "contrast", "dark", "dirt", "neon", "mint", , "sunrise"
+minimal_mistakes_skin: "plum" #"custom" # "air", "mint", "aqua", "contrast", "dark", "dirt", "neon", "mint", , "sunrise"
 
 # Site Settings
 locale: "ko-KR"
-title: "매일 매일 도전"
+title: "Today I Learned"
 title_separator: ""
 subtitle: ""
-name: "kimyeongwan"
+name: ""
 description: "기록으로 남기기"
 url: "https://kimyeong96.github.io" #http://localhost:4000
 baseurl: # the subpath of your site, e.g. "/blog"
@@ -102,25 +102,25 @@ analytics:
 
 # Site Author
 author:
-  name: "KIM YEONGWAN"
-  avatar: "/assets/images/sponge.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "Today I Learned"
+  name: #"KimYeongwan"
+  avatar: "/assets/images/pooh.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio: ""
   location: #"South Korea"
   email:
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:kimyeongwan0108@gmail.com"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/kimyeong96"
+#    - label: "Email"
+#      icon: "fas fa-fw fa-envelope-square"
+#      url: "mailto:kimyeongwan0108@gmail.com"
+#    - label: "GitHub"
+#      icon: "fab fa-fw fa-github"
+#      url: "https://github.com/kimyeong96"
 
 # Site Footer
 footer:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:marsincat1405@gmail.com"
+      url: "mailto:kimyeongwan0108@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/kimyeong96"
