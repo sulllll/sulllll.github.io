@@ -11,6 +11,70 @@
             📂 <span style="font-family:'Cafe24Oneprettynight';">전체 글 수</style> <span style="font-family:'Coming Soon';">{{sum}}</style> <span style="font-family:'Cafe24Oneprettynight';">개</style>
       </li>
       <li>
+        <span class="nav__sub-title">Academy</span>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "JAVA-academy" %}
+                    <li><a href="/categories/JAVA-academy" class="">JAVA 수업 ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "html1" %}
+                    <li><a href="/categories/html1" class=""> HTML&CSS 수업 ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "JAVASCRIPT" %}
+                    <li><a href="/categories/JAVASCRIPT" class="">JAVASCRIPT 수업 ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "Servlet" %}
+                    <li><a href="/categories/Servlet" class=""> Servlet 수업 ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "JSP" %}
+                    <li><a href="/categories/JSP" class=""> JSP 수업 ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "Spring" %}
+                    <li><a href="/categories/Spring" class=""> Spring 수업 ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "Database-academy" %}
+                    <li><a href="/categories/Database-academy" class=""> SQL 수업 ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "Database-jdbc" %}
+                    <li><a href="/categories/Database-jdbc" class=""> JDBC 수업 ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "MyBatis" %}
+                    <li><a href="/categories/MyBatis" class=""> MyBatis 수업 ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
         <span class="nav__sub-title">JAVA</span>
             <ul>
                 {% for category in site.categories %}
@@ -19,14 +83,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "JAVA-academy" %}
-                        <li><a href="/categories/JAVA-academy" class="">JAVA 수업 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-        <span class="nav__sub-title">Frontend</span>
+        <span class="nav__sub-title">Javascript</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "JAVASCRIPTALONE" %}
@@ -34,20 +91,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "JAVASCRIPT" %}
-                        <li><a href="/categories/JAVASCRIPT" class="">JAVASCRIPT 수업 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "html1" %}
-                        <li><a href="/categories/html1" class=""> HTML&CSS 수업 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
+
         <span class="nav__sub-title">ALGORITHM</span>
             <ul>
                 {% for category in site.categories %}
@@ -64,21 +108,6 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "JSP" %}
-                        <li><a href="/categories/JSP" class=""> JSP 수업 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-        <span class="nav__sub-title">Servlet</span>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Servlet" %}
-                        <li><a href="/categories/Servlet" class=""> Servlet 수업 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
         <span class="nav__sub-title">Spring</span>
             <ul>
                 {% for category in site.categories %}
@@ -87,39 +116,11 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Spring" %}
-                        <li><a href="/categories/Spring" class=""> Spring 수업 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
         <span class="nav__sub-title">Database</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Database-gr" %}
                         <li><a href="/categories/Database-gr" class=""> SQL({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Database-academy" %}
-                        <li><a href="/categories/Database-academy" class=""> SQL 수업 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Database-jdbc" %}
-                        <li><a href="/categories/Database-jdbc" class=""> JDBC 수업 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "MyBatis" %}
-                        <li><a href="/categories/MyBatis" class=""> MyBatis 수업 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
