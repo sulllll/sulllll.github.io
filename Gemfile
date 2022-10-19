@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-gemspecs
-gem "minimal-mistakes-jekyll"
-gem "jekyll", "~> 4.2.1"
-gem "webrick", "~> 1.7"
+gemspec
+
+gem 'jekyll-admin', group: :jekyll_plugins
+gem 'jekyll-sitemap'
