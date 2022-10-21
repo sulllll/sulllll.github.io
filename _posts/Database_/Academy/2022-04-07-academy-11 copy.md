@@ -5,7 +5,7 @@ categories: Oracle
 tag: [Oracle,DML,TCL,DCL,View,Sequence]
 toc: true
 toc_sticky: true
-author_profile: false
+author_profile: true
 sidebar:
   nav: "docs"
 ---

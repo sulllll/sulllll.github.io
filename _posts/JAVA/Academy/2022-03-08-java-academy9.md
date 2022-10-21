@@ -5,7 +5,7 @@ categories: Java
 tag: [JAVA,  메서드, 오버로딩]
 toc: true
 toc_sticky: true
-author_profile: false
+author_profile: true
 sidebar:
   nav: "docs"
 ---

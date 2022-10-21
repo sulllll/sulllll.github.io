@@ -5,7 +5,7 @@ categories: Java
 tag: [JAVA, 환경설정, 출력(print), 변수]
 toc: true
 toc_sticky: true
-author_profile: false
+author_profile: true
 sidebar:
   nav: "docs"
 ---

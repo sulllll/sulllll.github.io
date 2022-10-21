@@ -5,7 +5,7 @@ categories: Java
 tag: [JAVA, 객체, 라이브러리]
 toc: true
 toc_sticky: true
-author_profile: false
+author_profile: true
 sidebar:
   nav: "docs"
 ---

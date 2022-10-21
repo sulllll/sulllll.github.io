@@ -5,7 +5,7 @@ categories: Java
 tag: [JAVA, 제네릭, IO스트림]
 toc: true
 toc_sticky: true
-author_profile: false
+author_profile: true
 sidebar:
   nav: "docs"
 ---

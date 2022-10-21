@@ -4,7 +4,7 @@ title:  "DAY-38 Event 이용"
 categories: Javascript
 tag: [JAVASCRIPT, 자바스크립트, Event]
 toc: true
-author_profile: false
+author_profile: true
 sidebar:
   nav: "docs"
 ---

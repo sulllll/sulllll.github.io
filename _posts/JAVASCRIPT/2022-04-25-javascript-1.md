@@ -4,7 +4,7 @@ title:  "DAY-37 자바스크립트 시작"
 categories: Javascript
 tag: [JAVASCRIPT, 자바스크립트]
 toc: true
-author_profile: false
+author_profile: true
 sidebar:
   nav: "docs"
 ---

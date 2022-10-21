@@ -5,7 +5,7 @@ categories: Java
 tag: [JAVA, 반복문 탈출, labelling]
 toc: true
 toc_sticky: true
-author_profile: false
+author_profile: true
 sidebar:
   nav: "docs"
 ---

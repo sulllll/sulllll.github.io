@@ -4,7 +4,7 @@ title:  "DAY-43 정규표현식 활용"
 categories: Javascript
 tag: [JAVASCRIPT, 자바스크립트, 정규표현식 활용]
 toc: true
-author_profile: false
+author_profile: true
 sidebar:
   nav: "docs"
 

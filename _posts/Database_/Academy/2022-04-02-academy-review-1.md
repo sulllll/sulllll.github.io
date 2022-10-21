@@ -5,7 +5,7 @@ categories: Oracle
 tag: [Oracle, 데이터베이스 복습]
 toc: true
 toc_sticky: true
-author_profile: false
+author_profile: true
 sidebar:
   nav: "docs"
 ---

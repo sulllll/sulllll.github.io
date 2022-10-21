@@ -15,20 +15,44 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
-# categories:
-#   - title: "Academy"
+# docs:
+#   - title: Java
 #     children:
-#       - title: "Java 수업"
-#         url: /categories/JAVA-academy/
-#       - title: "Categories2"
-#         url: /categories/html1/
-#       - title: "Categories3"
-#         url: /categories/JAVASCRIPT/
-#       - title: "Categories4"
+#       - title: "Java"
+#         url: /categories/Java
+#   - title: Javascript
+#     children:
+#       - title: "Javascript"
+#         url: /categories/Javascript/
+#   - title: Html & Css
+#     children:
+#       - title: "Html"
+#         url: /categories/Html
+#       - title: "Css"
+#         url: /categories/Css/
+#   - title: Servlet & Jsp
+#     children:
+#       - title: "Servlet"
 #         url: /categories/Servlet/
-#       - title: "Categories4"
-#         url: /categories/JSP/
-#       - title: "Categories4"
+#       - title: "Jsp"
+#         url: /categories/Jsp/
+#   - title: Spring
+#     children:
+#       - title: "Spring"
 #         url: /categories/Spring/
-#       - title: "Categories4"
-#         url: /categories/Database-academy/
+#   - title: Database
+#     children:
+#       - title: "Oracle"
+#         url: /categories/Oracle/
+#       - title: "Jdbc"
+#         url: /categories/Jdbc/
+#       - title: "Mybatis"
+#         url: /categories/Mybatis/
+#   - title: Algorithm
+#     children:
+#       - title: "Algorithm"
+#         url: /categories/Algorithm/
+#   - title: Blog
+#     children:
+#       - title: "Blog"
+#         url: /categories/Blog/

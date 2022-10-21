@@ -5,7 +5,7 @@ categories: Java
 tag: [JAVA, 소켓, 네트워크]
 toc: true
 toc_sticky: true
-author_profile: false
+author_profile: true
 sidebar:
   nav: "docs"
 ---

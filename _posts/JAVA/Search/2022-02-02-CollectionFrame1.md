@@ -5,7 +5,7 @@ categories: Java
 tag: [JAVA, 컬렉션프레임워크, ArrayList, LinkedList, 자바의 정석]
 toc: true
 toc_sticky: true
-author_profile: false
+author_profile: true
 sidebar:
   nav: "docs"
 ---
