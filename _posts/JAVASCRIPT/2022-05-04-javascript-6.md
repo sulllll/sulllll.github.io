@@ -4,7 +4,7 @@ title:  "DAY-45 jquery event 활용"
 categories: Javascript
 tag: [JAVASCRIPT, 자바스크립트, jquery event 활용]
 toc: true
-author_profile: false
+author_profile: true
 sidebar:
   nav: "docs"
 

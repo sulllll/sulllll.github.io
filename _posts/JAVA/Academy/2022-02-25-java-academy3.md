@@ -5,7 +5,7 @@ categories: Java
 tag: [JAVA, String, 형변환, 연산자, Scanner]
 toc: true
 toc_sticky: true
-author_profile: false
+author_profile: true
 sidebar:
   nav: "docs"
 ---

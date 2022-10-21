@@ -19,7 +19,7 @@ locale: "ko-KR"
 title: "Today I Learned"
 title_separator: ""
 subtitle: ""
-name: ""
+name: "김영완"
 description: "기록으로 남기기"
 url: "https://kimyeong96.github.io" #http://localhost:4000
 baseurl: # the subpath of your site, e.g. "/blog"
@@ -101,12 +101,12 @@ author:
   location: #"South Korea"
   email:
   links:
-#    - label: "Email"
-#      icon: "fas fa-fw fa-envelope-square"
-#      url: "mailto:kimyeongwan0108@gmail.com"
-#    - label: "GitHub"
-#      icon: "fab fa-fw fa-github"
-#      url: "https://github.com/kimyeong96"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:kimyeongwan0108@gmail.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/kimyeong96"
 
 # Site Footer
 footer:
@@ -261,5 +261,6 @@ defaults:
       comments: true
       share: true
       related: true
-      sidebar:
-        nav: "categories"
+      # sidebar:
+      #   nav: "categories"
+      sidebar_main: true

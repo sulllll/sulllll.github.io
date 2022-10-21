@@ -4,7 +4,7 @@ title:  "DAY-42 정규표현식"
 categories: Javascript
 tag: [JAVASCRIPT, 자바스크립트, 정규표현식]
 toc: true
-author_profile: false
+author_profile: true
 sidebar:
   nav: "docs"
 ---

@@ -11,7 +11,6 @@
         <span style="font-family:'Cafe24Oneprettynight'; font-size: 13px;"> 📂</span> &nbsp; <span style="font-family:'Cafe24Oneprettynight'; font-size: 14px;">전체 글 수</style> <span style="font-family:'Coming Soon'; font-size: 14px;">{{sum}}</style> <span style="font-family:'Cafe24Oneprettynight'; font-size: 14px;">개</style>
       </li>
       <li>
-
         <span class="nav__sub-title">Java</span>
             <ul>
                 {% for category in site.categories %}
