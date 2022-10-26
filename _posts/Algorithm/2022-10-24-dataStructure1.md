@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "자료구조 맛보기 - BFS"
+title:  "알고리즘 맛보기 - BFS"
 categories: Algorithm
 tag: [BFS, DFS]
 toc: true
