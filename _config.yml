@@ -98,16 +98,16 @@ analytics:
 author:
   name: #"KimYeongwan"
   avatar: "/assets/images/meee.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: ""
+  bio: "힘내자."
   location: #"South Korea"
   email:
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:sirjk12@gmail.com"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/sulllll"
+  #  - label: "Email"
+  #    icon: "fas fa-fw fa-envelope-square"
+  #    url: "mailto:sirjk12@gmail.com"
+  #  - label: "GitHub"
+  #    icon: "fab fa-fw fa-github"
+  #    url: "https://github.com/sulllll"
 
 # Site Footer
 footer:
