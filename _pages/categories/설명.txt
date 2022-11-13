@@ -1,6 +1,6 @@
 ---
-title:                               # "Algorithm"              # 큰 카테고리
-layout:                              # archive                  # 고정
+title:                              # "Algorithm"              # 큰 카테고리
+layout:                             # archive                  # 고정
 permalink:                          # ategories/Algorithm      # 작은 카테고리
 author_profile: true
 sidebar_main: true
