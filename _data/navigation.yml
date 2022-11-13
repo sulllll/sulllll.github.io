@@ -62,3 +62,7 @@ main:
 #     children:
 #       - title: "Blog"
 #         url: /categories/Blog/
+#   - title: Test
+#     children:
+#       - title: "Test"
+#         url: /categories/Test/
