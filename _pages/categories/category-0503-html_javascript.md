@@ -1,5 +1,5 @@
 ---
-title: "JAVASCRIPT"
+title: "javascript"
 layout: archive
 permalink: categories/Javascript
 author_profile: true
