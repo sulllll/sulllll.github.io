@@ -8,3 +8,8 @@ sidebar_main: true
 
 {% assign posts = site.categories.Algorithm %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
+
+
+### 1. categories 생성할 카테고리를 해당 폼을 활용하여 md파일로 작성한다.
+### 2. post_ 예제파일을 활용하여 작성
+### 3. includes > nav_list_main 에 카테고리를 추가한다.

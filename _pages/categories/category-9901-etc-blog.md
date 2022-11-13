@@ -1,10 +1,10 @@
 ---
-title: "JAVA"
+title: "etc"
 layout: archive
-permalink: categories/JAVA-academy
+permalink: categories/Blog
 author_profile: true
 sidebar_main: true
 ---
 
-{% assign posts = site.categories.JAVA-academy %}
+{% assign posts = site.categories.Blog %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
