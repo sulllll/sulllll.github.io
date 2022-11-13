@@ -16,12 +16,12 @@ minimal_mistakes_skin: "plum" #"custom" # "air", "mint", "aqua", "contrast", "da
 
 # Site Settings
 locale: "ko-KR"
-title: "Today I Learned"
+title: "Moonlight Frontier"
 title_separator: ""
 subtitle: ""
-name: "김영완"
-description: "기록으로 남기기"
-url: "https://kimyeong96.github.io" #http://localhost:4000
+name: "Dohan"
+description: "study"
+url: "https://sulllll.github.io" #http://localhost:4000
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: "github-account/github-account.github.io" # GitHub Repo 이름
 teaser: #
