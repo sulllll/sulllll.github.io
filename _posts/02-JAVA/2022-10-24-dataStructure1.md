@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "알고리즘 맛보기 - BFS"
-categories: JAVA
+categories: Java
 tag: [java, BFS, DFS]
 toc: true
 toc_sticky: true
